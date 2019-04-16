@@ -1,0 +1,85 @@
+body, h1, h2, ul, li, p, dd, dt, dl {
+    margin: 0px;
+    padding: 0px;
+}
+
+/*creating a "responsive" image*/
+img {
+    display: block;
+    max-width: 100%;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    background: #faf6ed; /* background color*/
+    color: #222;
+    webkit-font-smoothing: antialiased;
+    display: grid; /* making collumns in web pag*/
+    grid-template-columns: 1fr 120px  minmax(300px, 800px) 1fr; /* 4 columns = 1º column 1fr, 2º column 120px, 3º 1 column  minmax(300px, 800px), 4º column 1fr*/
+
+}
+
+.menu { /* "espace" where are the menu*/
+    grid-column: 3 / 5; /* of 2nd column ... 5th column*/
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    background: #FB5
+}
+
+.menu ul {
+    display: flex;
+    flex-wrap: wrap; /* to "broken" the itens if it no can stay on bar*/
+    padding: 10px;/* to create a little margin*/
+}
+
+.menu li a {
+    display: block;
+    padding: 10px;
+    margin-right: 10px;
+    color: #222;
+    text-decoration: none;
+    font-family: monospace;
+    font-weight: bold;
+    text-transform: uppercase; 
+    font-size: 0.875rem; 
+    letter-spacing: .1em;
+}
+
+/* now here, we will modelin the all grid sections*/
+.grid-section {
+    grid-column: 2 / 4;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px; /* space of 10px of left*/
+    display: grid; /* creating columns in grid section*/
+    grid-template-columns: 90px 300px 1fr;/* values of columns*/
+    grid-gap: 20px;  /* Distance between grids*/
+    margin-bottom: 4rem;
+}
+
+.titulo {
+    font-family: georgia;
+    font-size: 6rem;
+    line-height: 1; /* espace between words, side up and down*/
+    font-weight: 400;
+    margin-bottom: 1rem;
+    grid-column: 1 / 4; /*defining where it will stay*/  
+}
+
+.animal-description p {
+    font-family: Arial;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+}
+
+.animal-description h2 {
+    font-family: Arial;
+    font-size: 1rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    letter-spacing: .1em;
+    color: #E54;
+}
