@@ -23,7 +23,11 @@ body {
 }
 
 .menu { /* "espace" where are the menu*/
+<<<<<<< HEAD
     grid-column: 3 / 4; /* of 2nd column ... 5th column*/
+=======
+    grid-column: 3 / 5; /* of 2nd column ... 5th column*/
+>>>>>>> 0f3e13ce6a8be8515b568763108dd9af34ef576e
     margin-top: 2rem;
     margin-bottom: 2rem;
     background: #FB5
@@ -46,6 +50,7 @@ body {
     text-transform: uppercase; 
     font-size: 0.875rem; 
     letter-spacing: .1em;
+<<<<<<< HEAD
 }
 
 /* now here, we will modelin the all grid sections*/
@@ -212,4 +217,6 @@ body {
     .copy {
         margin-bottom: 0px;
     }
+=======
+>>>>>>> 0f3e13ce6a8be8515b568763108dd9af34ef576e
 }
